@@ -1,5 +1,5 @@
 {
-    "name": "constup/aws-secrets-bundle",
+    "name": "signitic/aws-secrets-bundle",
     "type": "symfony-bundle",
     "description": "Use AWS Secrets as service container parameters in Symfony.",
     "keywords": ["Symfony", "AWS", "ENV", "Secrets Manager"],
