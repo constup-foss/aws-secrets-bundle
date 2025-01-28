@@ -22,9 +22,10 @@ class SecretsManagerClientFactory
     public static function createClient(
         string $region,
         string $version,
-        ?string $endpoint, 
+        ?string $endpoint,
         ?string $key,
-        ?string $secret
+        ?string $secret,
+        ?string $token,
     ): SecretsManagerClient {
         $config = [
             'region' => $region,
@@ -38,6 +39,10 @@ class SecretsManagerClientFactory
             ];
         } elseif (($key && !$secret) || (!$key && $secret)) {
             throw new Exception('Both key and secret must be provided or neither');
+        }
+
+        if (! empty($token)) {
+            $config['credentials']['token'] = $token;
         }
 
         if ($endpoint) {
