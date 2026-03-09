@@ -44,6 +44,7 @@ class AwsSecretsExtension extends Extension
             ->addArgument($configs['client_config']['endpoint'])
             ->addArgument($configs['client_config']['credentials']['key'])
             ->addArgument($configs['client_config']['credentials']['secret'])
+            ->addArgument($configs['client_config']['credentials']['token'])
             ->setFactory([SecretsManagerClientFactory::class, 'createClient']);
 
         $container->setAlias('aws_secrets.client', 'aws_secrets.secrets_manager_client')
