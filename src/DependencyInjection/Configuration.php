@@ -31,6 +31,7 @@ class Configuration implements ConfigurationInterface
                             ->children()
                                 ->scalarNode('key')->defaultNull()->end()
                                 ->scalarNode('secret')->defaultNull()->end()
+                                ->scalarNode('token')->defaultNull()->end()
                             ->end()
                         ->end()
                     ->end()
