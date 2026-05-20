@@ -1,9 +1,3 @@
-# IMPORTANT NOTE
-
-**Due to GitHub being integrated into Microsoft’s CoreAI division and effectivelly becoming Microsoft’s data source 
-for training Microsoft’s LLMs without attributing or compensating open source authors and projects, this repository 
-is now locked until it’s transferred to another platform.**
-
 # AWS Secrets Bundle
 
 [![GitHub license](https://img.shields.io/github/license/constup/aws-secrets-bundle?style=flat-square&color=green)](https://github.com/constup/aws-secrets-bundle/blob/master/LICENSE)

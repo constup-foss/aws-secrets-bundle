@@ -1,0 +1,15 @@
+*.sh    text eol=lf
+/.gitignore export-ignore
+/.gitattributes export-ignore
+/.dockerignore export-ignore
+/compose.yaml export-ignore
+/.php-cs-fixer.dist.php export-ignore
+/Dockerfile export-ignore
+/phpunit.xml export-ignore
+/projectinit_cli.sh export-ignore
+/start.sh export-ignore
+/doc/projectinit export-ignore
+/projectinit_docker export-ignore
+/public export-ignore
+/tests export-ignore
+/.github export-ignore
